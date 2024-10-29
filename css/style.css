@@ -236,7 +236,7 @@ img {
 }
 .intro-text p {
     font-size: 1.5em;
-    color: #ffffff; /* Color del texto de introducción */
+    color: #343a40; /* Color del texto de introducción */
 }
 
 /* Estilo del contenido general */
@@ -249,7 +249,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #8f142b
+    color: #000000
 }
 
 p {
@@ -590,6 +590,7 @@ h1 {
 }
 
 h2 {
+    font-family: boston angel;
     font-size: 2.2em;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -600,13 +601,15 @@ h2 {
 }
 
 h3 {
+    font-family: boston angel;
     font-size: 1.8em;
-    color: #f4f4f9; /* Letras blancas para los subtítulos */
+    color: #8f142b; /* Letras blancas para los subtítulos */
     margin-top: 30px;
     font-weight: 500;
 }
 
 p {
+    font-family: boston angel;
     line-height: 1.8;
     font-size: 1.2em;
     margin: 10px 0;
