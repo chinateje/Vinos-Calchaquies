@@ -7,7 +7,77 @@
         font-weight: normal;
         font-style: normal;
     }
-    
+    /* Importar la fuente Boston Angel */
+@import url('https://fonts.googleapis.com/css2?family=Boston+Angel&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Boston Angel', sans-serif; /* Aplicar la fuente a todo el cuerpo */
+    background-color: #f8f9fa; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #343a40; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 20px 0; /* Espaciado en el encabezado */
+}
+
+nav.menu {
+    background-color: #343a40; /* Color del menú */
+}
+
+nav.menu ul {
+    list-style-type: none; /* Eliminar puntos de la lista */
+    padding: 0; /* Eliminar padding */
+    text-align: center; /* Centrar el texto */
+}
+
+nav.menu li {
+    display: inline; /* Mostrar elementos de lista en línea */
+    margin: 0 15px; /* Espaciado entre elementos de lista */
+}
+
+nav.menu a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+nav.menu a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px; /* Espaciado en el contenido principal */
+}
+
+h1 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #343a40; /* Color del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 10px 0; /* Espaciado en el pie de página */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+
+
 
 }
 
@@ -57,7 +127,7 @@ header {
 h1 {
     font-family: 'boston angel', serif; /* Usando la fuente personalizada */
     font-size: 3em;
-    color: #ffffff; /* Color del texto del título */
+    color: #000000; /* Color del texto del título */
 }
 <div class="sticky-container">
     <div class="sticky-box">Elemento Sticky</div>
@@ -142,7 +212,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
     font-family: 'boston angel'',sans-serif;
     padding: 10px 15px;
@@ -166,7 +236,7 @@ img {
 }
 .intro-text p {
     font-size: 1.5em;
-    color: #ffffff; /* Color del texto de introducción */
+    color: #343a40; /* Color del texto de introducción */
 }
 
 /* Estilo del contenido general */
@@ -179,7 +249,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 p {
