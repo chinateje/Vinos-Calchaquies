@@ -72,7 +72,52 @@ nav ul {
     justify-content: center;
     padding: 10px;
     background-color: #2a2a2a;
-    
+    /* Reset general para márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para productos */
+#productos ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Columna única por defecto */
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Responsividad: 2 columnas en tabletas, 3 columnas en computadoras */
+@media (min-width: 600px) {
+    #productos ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para tabletas */
+    }
+}
+
+@media (min-width: 1024px) {
+    #productos ul {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para computadoras */
+    }
+}
+
+#productos ul li {
+    background-color: #2a2a2a; /* Color de fondo para cada producto */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#productos ul li:hover {
+    background-color: #8f142b; /* Color de fondo al pasar el mouse */
+}
+
+#productos ul li img {
+    width: 100%;
+    height: auto;
+}
+
+/* Otros
 /* Estilos para dispositivos móviles */
 .navbar {
     display: flex;
@@ -365,7 +410,7 @@ footer {
 
 /* Clase base para la fuente DM Sans */
 .dm-sans {
-  font-family: "DM Sans", sans-serif;
+  font-family: "boston angel", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
