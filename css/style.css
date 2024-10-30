@@ -236,7 +236,7 @@ img {
 }
 .intro-text p {
     font-size: 1.5em;
-    color: #343a40; /* Color del texto de introducción */
+    color: #ffffff; /* Color del texto de introducción */
 }
 
 /* Estilo del contenido general */
@@ -249,7 +249,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000000;
+    color: #8f142b
 }
 
 p {
