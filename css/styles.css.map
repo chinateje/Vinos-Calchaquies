@@ -1,0 +1,14 @@
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"styles.css"}
+// scss/styles.scss
+$primary-color: #3498db;
+
+body {
+  background-color: $primary-color;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
