@@ -1,79 +1,91 @@
+
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import 'header';\a   \2502          ^^^^^^^^\a   \2575 \a   css/main.scss 4:9  root stylesheet";
+}
 /* Importando la fuente personalizada "The Seasons" para H1 */
 @font-face {
-    @font-face {
-        font-family: 'Boston Angel';
-        src: url('fonts/BostonAngel.woff2') format('woff2'),
-             url('fonts/BostonAngel.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    /* Importar la fuente Boston Angel */
+  @font-face {
+      font-family: 'Boston Angel';
+      src: url('fonts/BostonAngel.woff2') format('woff2'),
+           url('fonts/BostonAngel.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  /* Importar la fuente Boston Angel */
 @import url('https://fonts.googleapis.com/css2?family=Boston+Angel&display=swap');
 
 /* Estilos generales */
 body {
-    font-family: 'Boston Angel', sans-serif; /* Aplicar la fuente a todo el cuerpo */
-    background-color: #f8f9fa; /* Color de fondo */
-    margin: 0;
-    padding: 0;
+  font-family: 'Boston Angel', sans-serif; /* Aplicar la fuente a todo el cuerpo */
+  background-color: #f8f9fa; /* Color de fondo */
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #343a40; /* Color de fondo del encabezado */
-    color: white; /* Color del texto en el encabezado */
-    padding: 20px 0; /* Espaciado en el encabezado */
+  background-color: #343a40; /* Color de fondo del encabezado */
+  color: white; /* Color del texto en el encabezado */
+  padding: 20px 0; /* Espaciado en el encabezado */
 }
 
 nav.menu {
-    background-color: #343a40; /* Color del menú */
+  background-color: #343a40; /* Color del menú */
 }
 
 nav.menu ul {
-    list-style-type: none; /* Eliminar puntos de la lista */
-    padding: 0; /* Eliminar padding */
-    text-align: center; /* Centrar el texto */
+  list-style-type: none; /* Eliminar puntos de la lista */
+  padding: 0; /* Eliminar padding */
+  text-align: center; /* Centrar el texto */
 }
 
 nav.menu li {
-    display: inline; /* Mostrar elementos de lista en línea */
-    margin: 0 15px; /* Espaciado entre elementos de lista */
+  display: inline; /* Mostrar elementos de lista en línea */
+  margin: 0 15px; /* Espaciado entre elementos de lista */
 }
 
 nav.menu a {
-    color: white; /* Color de los enlaces */
-    text-decoration: none; /* Eliminar subrayado */
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Eliminar subrayado */
 }
 
 nav.menu a:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
+  text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
 /* Estilos para el contenido principal */
 main {
-    padding: 20px; /* Espaciado en el contenido principal */
+  padding: 20px; /* Espaciado en el contenido principal */
 }
 
 h1 {
-    text-align: center; /* Centrar el título */
-    margin-bottom: 20px; /* Espaciado inferior del título */
+  text-align: center; /* Centrar el título */
+  margin-bottom: 20px; /* Espaciado inferior del título */
 }
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #343a40; /* Color del pie de página */
-    color: white; /* Color del texto en el pie de página */
-    text-align: center; /* Centrar el texto del pie de página */
-    padding: 10px 0; /* Espaciado en el pie de página */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #343a40; /* Color del pie de página */
+  color: white; /* Color del texto en el pie de página */
+  text-align: center; /* Centrar el texto del pie de página */
+  padding: 10px 0; /* Espaciado en el pie de página */
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Estilos adicionales */
 .container {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centrar el contenedor */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
 }
 
 
@@ -83,419 +95,419 @@ footer {
 
 /* Estilos para dispositivos móviles */
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Media query para computadoras de escritorio */
 @media (min-width: 1024px) {
-    img {
-        width: 50%;
-    }
+  img {
+      width: 50%;
+  }
 }
 /* Reset general para márgenes y rellenos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Tipografía general */
 body {
-    font-family: 'boston angel', sans-serif;
-    background-color: #000000; /* Color de fondo */
-    color: #ffffff; /* Color de texto por defecto */
-    line-height: 1.6;
+  font-family: 'boston angel', sans-serif;
+  background-color: #000000; /* Color de fondo */
+  color: #ffffff; /* Color de texto por defecto */
+  line-height: 1.6;
 }
 
 /* Estilo del encabezado */
 header {
-    background-color: #000000; /* Fondo del encabezado */
-    padding: 20px;
-    text-align: center;
-    width:100%;
+  background-color: #000000; /* Fondo del encabezado */
+  padding: 20px;
+  text-align: center;
+  width:100%;
 }
 .head {
-    display: grid;
-    place-items: center; 
+  display: grid;
+  place-items: center; 
 }
 
 #logo{
-    width: 190px;
+  width: 190px;
 }
 
 h1 {
-    font-family: 'boston angel', serif; /* Usando la fuente personalizada */
-    font-size: 3em;
-    color: #000000; /* Color del texto del título */
+  font-family: 'boston angel', serif; /* Usando la fuente personalizada */
+  font-size: 3em;
+  color: #000000; /* Color del texto del título */
 }
 <div class="sticky-container">
-    <div class="sticky-box">Elemento Sticky</div>
-    
+  <div class="sticky-box">Elemento Sticky</div>
+  
 </div>
 /* Menú de navegación */
 nav ul {
-    list-style: none;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #2a2a2a;
-    /* Reset general para márgenes y rellenos */
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2a2a2a;
+  /* Reset general para márgenes y rellenos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos para productos */
 #productos ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Columna única por defecto */
-    gap: 20px;
-    padding: 0;
-    list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Columna única por defecto */
+  gap: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 /* Responsividad: 2 columnas en tabletas, 3 columnas en computadoras */
 @media (min-width: 600px) {
-    #productos ul {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas para tabletas */
-    }
+  #productos ul {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas para tabletas */
+  }
 }
 
 @media (min-width: 1024px) {
-    #productos ul {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas para computadoras */
-    }
+  #productos ul {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas para computadoras */
+  }
 }
 
 #productos ul li {
-    background-color: #2a2a2a; /* Color de fondo para cada producto */
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #2a2a2a; /* Color de fondo para cada producto */
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 #productos ul li:hover {
-    background-color: #8f142b; /* Color de fondo al pasar el mouse */
+  background-color: #8f142b; /* Color de fondo al pasar el mouse */
 }
 
 #productos ul li img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Otros
 /* Estilos para dispositivos móviles */
 .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Media query para tabletas y computadoras de escritorio */
 @media (min-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+  }
 }
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
-    margin-right: 20px;
+  display: inline;
+  margin: 0 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 700;
-    font-family: 'boston angel'',sans-serif;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-family: 'boston angel'',sans-serif;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #8f142b;
+  color: #8f142b;
 }
 
 /* Sección principal */
 
 #home {
-    background-color: #8f142b; /* Fondo de la sección principal */
-    padding: 60px 20px;
-    text-align: center;
+  background-color: #8f142b; /* Fondo de la sección principal */
+  padding: 60px 20px;
+  text-align: center;
 }
 
 img {
-    width:100%;
+  width:100%;
 }
 .intro-text p {
-    font-size: 1.5em;
-    color: #ffffff; /* Color del texto de introducción */
+  font-size: 1.5em;
+  color: #ffffff; /* Color del texto de introducción */
 }
 
 /* Estilo del contenido general */
 section {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #8f142b
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8f142b
 }
 
 p {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /* Productos */
 #productos ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0;
-    list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 #productos ul li {
-    background-color: #2a2a2a;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 #productos ul li:hover {
-    background-color: #8f142b;
+  background-color: #8f142b;
 }
 
 #productos ul li p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* Formulario de contacto */
 
 .vinostonesr {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;    
-  }
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    
+}
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 #newletter-titulo {
-    text-align: center;
-    margin-bottom: 11px;
+  text-align: center;
+  margin-bottom: 11px;
 }
 
 form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
 form button {
-    padding: 10px;
-    background-color: #8f142b;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+  padding: 10px;
+  background-color: #8f142b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 form button:hover {
-    background-color: #6c1021;
+  background-color: #6c1021;
 }
 
 /* Footer */
 footer {
-    background-color: #000000;
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 0.9em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Media queries para mejor responsividad */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
 
-    section {
-        padding: 20px;
-    }
+  section {
+      padding: 20px;
+  }
 
-    form {
-        width: 100%;
-    }
+  form {
+      width: 100%;
+  }
 }
 * Estilos para el header */
 header {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+  margin: 0;
+  font-size: 2.5em;
 }
 
 /* Estilos para el menú de navegación */
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 /* Estilos para la sección de inicio */
 #home {
-    background-image: url('ruta/a/tu/imagen-fondo.jpg'); /* Cambia por una imagen de fondo */
-    background-size: cover;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
+  background-image: url('ruta/a/tu/imagen-fondo.jpg'); /* Cambia por una imagen de fondo */
+  background-size: cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .hero p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .btn {
-    background-color: #ff5733; /* Color del botón */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+  background-color: #ff5733; /* Color del botón */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 /* Estilos para la galería de productos */
 .productos-galeria {
-    
-    .galeria {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
-    }
-    
-    .vino {
-        background-color: #f4f4f9;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        width: 100%;
-        max-width: 300px; /* Ajusta el ancho máximo para que se vean en fila */
-        flex: 1; /* Permite que los elementos se distribuyan equitativamente en la fila */
-    }
-    
-    .vino img {
-        width: 100%;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    
-    .d-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .vino h4 {
-        font-size: 1.2em;
-        color: #333;
-    }
-    
-    .vino p {
-        font-size: 1em;
-        color: #555;
-    }
-    padding: 50px 20px;
-    text-align: center;
+  
+  .galeria {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+  }
+  
+  .vino {
+      background-color: #f4f4f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 100%;
+      max-width: 300px; /* Ajusta el ancho máximo para que se vean en fila */
+      flex: 1; /* Permite que los elementos se distribuyan equitativamente en la fila */
+  }
+  
+  .vino img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+  }
+  
+  .d-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .vino h4 {
+      font-size: 1.2em;
+      color: #333;
+  }
+  
+  .vino p {
+      font-size: 1em;
+      color: #555;
+  }
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .galeria {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .vino {
-    width: 200px;
-    margin: 20px;
+  width: 200px;
+  margin: 20px;
 }
 
 .vino img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .vino h4 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Estilos para el footer */
 footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 /* Importar la fuente DM Sans desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 /* Clase base para la fuente DM Sans */
 .dm-sans {
-  font-family: "boston angel", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+font-family: "boston angel", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
 }
 
 /* Variaciones de peso */
 .dm-sans-400 {
-  font-weight: 400; /* Regular */
+font-weight: 400; /* Regular */
 }
 
 .dm-sans-500 {
-  font-weight: 500; /* Medium */
+font-weight: 500; /* Medium */
 }
 
 .dm-sans-700 {
-  font-weight: 700; /* Bold */
+font-weight: 700; /* Bold */
 }
 
 /* Importar la fuente DM Sans desde Google Fonts */
@@ -503,22 +515,22 @@ footer {
 
 /* Clase base para la fuente DM Sans */
 .dm-sans {
-  font-family: "boston angel", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+font-family: "boston angel", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
 }
 
 /* Variaciones de peso */
 .dm-sans-400 {
-  font-weight: 400; /* Regular */
+font-weight: 400; /* Regular */
 }
 
 .dm-sans-500 {
-  font-weight: 500; /* Medium */
+font-weight: 500; /* Medium */
 }
 
 .dm-sans-700 {
-  font-weight: 700; /* Bold */
+font-weight: 700; /* Bold */
 }
 /* Importar la fuente DM Sans desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -531,186 +543,186 @@ footer {
 
 /* CSS para ./pages/maridajes.html */
 body {
-    font-family: 'boston angel', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2b2b2b; /* Fondo oscuro */
-    color: #f4f4f9; /* Letras blancas */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Asegura que el contenido ocupe toda la altura */
+  font-family: 'boston angel', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b; /* Fondo oscuro */
+  color: #f4f4f9; /* Letras blancas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el contenido ocupe toda la altura */
 }
 display: flex o display: grid 
 .bg-container {
-    background-color: #1f1a1b; /* Ajusta el color de fondo según prefieras */
-    padding: 20px; /* Añade padding para que el contenido no esté pegado al borde */
-    border-radius: 8px; /* Opcional: redondea los bordes */
+  background-color: #1f1a1b; /* Ajusta el color de fondo según prefieras */
+  padding: 20px; /* Añade padding para que el contenido no esté pegado al borde */
+  border-radius: 8px; /* Opcional: redondea los bordes */
 }
 
 .maridaje {
-    max-width: 1000px;
-    margin: 20px;
-    padding: 30px;
-    background-color: #1f1a1b; /* Fondo de la sección maridaje */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espacio entre los elementos internos */
-    border: 1px solid #8f142b; /* Bordó para el borde de la caja */
+  max-width: 1000px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #1f1a1b; /* Fondo de la sección maridaje */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los elementos internos */
+  border: 1px solid #8f142b; /* Bordó para el borde de la caja */
 }
 
 /* Estilo para las cajas alrededor de los textos */
 .text-box {
-    background-color: #2b2b2b;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-left: 5px solid #8f142b; /* Línea bordó en el borde izquierdo */
-    margin: 20px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-left: 5px solid #8f142b; /* Línea bordó en el borde izquierdo */
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .text-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 h1, h2 {
-    color: #8f142b; /* Bordó para los títulos principales */
+  color: #8f142b; /* Bordó para los títulos principales */
 }
 
 h1 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 700;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
 }
 
 h2 {
-    font-family: boston angel;
-    font-size: 2.2em;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #8f142b;
-    padding-bottom: 10px;
-    font-weight: 500;
-    text-align: center;
+  font-family: boston angel;
+  font-size: 2.2em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #8f142b;
+  padding-bottom: 10px;
+  font-weight: 500;
+  text-align: center;
 }
 
 h3 {
-    font-family: boston angel;
-    font-size: 1.8em;
-    color: #8f142b; /* Letras blancas para los subtítulos */
-    margin-top: 30px;
-    font-weight: 500;
+  font-family: boston angel;
+  font-size: 1.8em;
+  color: #8f142b; /* Letras blancas para los subtítulos */
+  margin-top: 30px;
+  font-weight: 500;
 }
 
 p {
-    font-family: boston angel;
-    line-height: 1.8;
-    font-size: 1.2em;
-    margin: 10px 0;
-    font-weight: 400;
+  font-family: boston angel;
+  line-height: 1.8;
+  font-size: 1.2em;
+  margin: 10px 0;
+  font-weight: 400;
 }
 
 section {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Espacio entre los elementos */
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos */
 }
 
 /* Estilo para los textos destacados */
 .highlighted {
-    color: #8f142b
-    font-weight: 700;
+  color: #8f142b
+  font-weight: 700;
 }
 
 a {
-    color: #8f142b; /* Bordó para enlaces */
-    text-decoration: none;
-    font-weight: 500;
+  color: #8f142b; /* Bordó para enlaces */
+  text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .maridaje p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .maridaje h3 {
-    color: #8f142b; /* Bordó para los subtítulos */
+  color: #8f142b; /* Bordó para los subtítulos */
 }
 
 .maridaje section {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .maridaje p:first-child {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* Flexbox para layout horizontal */
 .maridaje-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacio entre los elementos flexibles */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre los elementos flexibles */
 }
 
 .maridaje-item {
-    flex: 1;
-    min-width: 300px;
-    background-color: #2b2b2b;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    transition: box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 300px;
+  background-color: #2b2b2b;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
 }
 
 .maridaje-item:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Box model para botones o enlaces */
 .maridaje-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #8f142b;
-    color: #f4f4f9;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8f142b;
+  color: #f4f4f9;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .maridaje-button:hover {
-    background-color: #8f142b;
+  background-color: #8f142b;
 }
 
 /* Responsivo para pantallas más pequeñas */
 @media (max-width: 768px) {
-    .maridaje {
-        padding: 15px;
-    }
+  .maridaje {
+      padding: 15px;
+  }
 
-    h1 {
-        font-size: 2.2em;
-    }
+  h1 {
+      font-size: 2.2em;
+  }
 
-    h2 {
-        font-size: 1.8em;
-    }
+  h2 {
+      font-size: 1.8em;
+  }
 
-    h3 {
-        font-size: 1.4em;
-    }
+  h3 {
+      font-size: 1.4em;
+  }
 
-    p {
-        font-size: 1em;
-    }
+  p {
+      font-size: 1em;
+  }
 }
