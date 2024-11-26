@@ -1,8 +1,7 @@
-@import 'base/reset';
-@import 'base/variables';
-@import 'base/fonts';
-@import 'components/header';
-@import 'components/nav';
-@import 'components/footer';
-@import 'components/products';
-
+@use 'base/reset';
+@use 'base/variables';
+@use 'base/fonts';
+@use 'components/header';
+@use 'components/nav';
+@use 'components/footer';
+@use 'components/products';

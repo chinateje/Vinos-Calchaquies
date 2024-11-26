@@ -1,0 +1,21 @@
+footer {
+    background-color: #2e2e2e; // Fondo oscuro para el pie de página
+    color: #ffffff; // Texto blanco para contraste
+    padding: 20px;
+    text-align: center;
+  
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+    }
+  
+    a {
+      color: #f8c24e; // Un color llamativo para los enlaces
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

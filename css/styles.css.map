@@ -1,13 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"styles.css"}
-// scss/styles.scss
-$primary-color: #3498db;
-
-body {
-  background-color: $primary-color;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  color: white;
-  font-size: 2rem;
-}
+{"version":3,"sourceRoot":"","sources":["../scss/components/footer.scss","../scss/components/products.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE;EACA;;AACA;EACE;;;AChBR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;EACA","file":"styles.css"}
