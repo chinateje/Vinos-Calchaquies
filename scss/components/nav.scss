@@ -1,0 +1,54 @@
+nav {
+    background-color: $primary-color;
+    
+   
+  padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    al
+  
+   
+  align-items: center;
+  }
+  
+  // Enlaces dentro de la barra de navegación
+  nav a {
+    color: $text-color;
+    text-decoration: none;
+    
+   
+  margin: 0 1rem;
+    font-family: $font-primary;
+    font-size: 1rem;
+  
+    &
+  
+    &
+  
+  
+  :hover {
+      color: $secondary-color;
+    }
+  }
+  
+  // Logo en la barra de navegación
+  nav .logo {
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+  
+  // Menú responsive (opcional)
+  .nav-menu {
+    display: none;
+  
+    
+  
+   
+  @media (max-width: 768px) {
+      
+    
+  display: block;
+    }
+  }

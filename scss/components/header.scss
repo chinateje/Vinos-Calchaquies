@@ -1,0 +1,63 @@
+header {
+    background-color: #343a40;
+    color: #fff;
+    
+   
+  padding: 20px 0;
+    text-align: center;
+  
+    
+  
+   
+  h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+  }
+  
+  // Menú de navegación
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      
+      justify
+  justify-content: center;
+      
+     
+  padding: 10px;
+      background-color: #2a2a2a;
+  
+      li {
+        display: inline;
+        margin-right: 20px;
+  
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 700;
+          font-family: 'Boston Angel', sans-serif;
+          padding: 10px 15px;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #8f142b;
+          }
+        }
+      }
+    }
+  }
+  
+  // Sección principal
+  #home {
+    background-color: #8f142b;
+    padding: 60px 20px;
+    text-align: center;
+  
+    .intro-text {
+      p {
+        font-size: 1.5em;
+        color: #fff;
+      }
+    }
+  }

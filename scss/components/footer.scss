@@ -18,4 +18,75 @@ footer {
       }
     }
   }
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    
+    text
+  text-align: center;
+    
+   
+  padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
   
+  
+  }
+  // Media Queries
+  @media (min-width: 600px) {
+    #productos ul {
+      
+      gr
+  
+     
+  grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+    }
+  @media (min-width: 1024px) {
+    #productos ul {
+      
+      gri
+  
+      
+  
+   
+  grid-template-columns: repeat(3, 1fr);
+    }
+  
+    img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      
+      align
+  align-items: center;
+    }
+  
+    
+   
+  section {
+      
+     
+  padding: 20px;
+    }
+  
+    form {
+      
+     
+  width: 100%;
+    }
+  }
+  
+    }
+  }
+  ``
