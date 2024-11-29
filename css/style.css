@@ -243,7 +243,7 @@ nav ul li a {
   text-decoration: none;
   color: #000000;
   font-weight: 700;
-  font-family: 'boston angel'',sans-serif;
+  font-family: 'boston angel''
   padding: 10px 15px;
   transition: color 0.3s ease;
 }
@@ -583,7 +583,7 @@ display: flex o display: grid
   margin: 20px;
   padding: 30px;
   background-color: #1f1a1b; /* Fondo de la sección maridaje */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(255, 254, 254, 0.962);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -814,3 +814,37 @@ td input[type="number"] {
     background-color: #dc3545;
     border: none;
 }
+.whatsapp-link {
+  position: fixed; /* Permite que sea flotante */
+  bottom: 20px; /* Separación del borde inferior */
+  right: 20px; /* Separación del borde derecho */
+  background-color: #25D366; /* Verde de WhatsApp */
+  border-radius: 50%; /* Botón redondo */
+  width: 60px; /* Tamaño del botón */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 1000; /* Para asegurarlo sobre otros elementos */
+  transition: transform 0.3s ease;
+
+  img {
+      width: 30px; /* Tamaño de la imagen */
+      height: 30px;
+  }
+
+  &:hover {
+      transform: scale(1.1); /* Aumentar al pasar el mouse */
+  }
+}
+.slider {
+  overflow: hidden;
+
+  .content {
+      transition: transform 0.5s ease-in-out;
+  }
+}
+// Animación slider
+const sliderContent = document.querySelector('.slider .content');
+let position = 0;

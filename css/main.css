@@ -1,1 +1,18 @@
+/* Error: expected "{".
+ *    ,
+ * 14 |   align-items: center;
+ *    |                      ^
+ *    '
+ *   scss/base/fonts.scss 14:22  @use
+ *   scss/main.scss 3:1          root stylesheet */
 
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 14 \2502    align-items: center;\a    \2502                       ^\a    \2575 \a   scss/base/fonts.scss 14:22  @use\a   scss/main.scss 3:1          root stylesheet';
+}
