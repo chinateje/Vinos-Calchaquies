@@ -8,7 +8,7 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import 'header';\a   \2502          ^^^^^^^^\a   \2575 \a   css/main.scss 4:9  root stylesheet";
+ 
 }
 /* Importando la fuente personalizada "The Seasons" para H1 */
 @font-face {
@@ -278,7 +278,16 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #8f142b
+  color: #f5f5f5
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5f5f5; /* Color blanco o gris claro */
+    border: 2px solid #8f142b; /* Borde de color bordó */
+    padding: 10px; /* Espaciado alrededor del texto para que se vea mejor */
+    border-radius: 8px; /* Opcional: bordes redondeados para el borde */
+  }
+  
 }
 
 p {
@@ -323,7 +332,7 @@ form {
   flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
-  background-color: #2a2a2a;
+  background-color: #8f142b;
   padding: 20px;
   border-radius: 5px;
 }
@@ -343,7 +352,7 @@ form input, form textarea {
 
 form button {
   padding: 10px;
-  background-color: #8f142b;
+  background-color: #000000;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -571,18 +580,21 @@ body {
   align-items: center;
   min-height: 100vh; /* Asegura que el contenido ocupe toda la altura */
 }
-display: flex o display: grid 
 .bg-container {
-  background-color: #1f1a1b; /* Ajusta el color de fondo según prefieras */
-  padding: 20px; /* Añade padding para que el contenido no esté pegado al borde */
-  border-radius: 8px; /* Opcional: redondea los bordes */
+  display: grid; /* Disposición en filas y columnas */
+  background-color: #1f1a1b;
+  padding: 20px;
+  border-radius: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define las columnas */
+  gap: 20px; /* Espacio entre los elementos */
 }
+
 
 .maridaje {
   max-width: 1000px;
   margin: 20px;
   padding: 30px;
-  background-color: #1f1a1b; /* Fondo de la sección maridaje */
+  background-color: #ffffff; /* Fondo de la sección maridaje */
   box-shadow: 0 8px 16px rgba(255, 254, 254, 0.962);
   border-radius: 12px;
   display: flex;
@@ -593,7 +605,7 @@ display: flex o display: grid
 
 /* Estilo para las cajas alrededor de los textos */
 .text-box {
-  background-color: #2b2b2b;
+  background-color: #fff6f6;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 20px;
@@ -607,8 +619,8 @@ display: flex o display: grid
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2 {
-  color: #8f142b; /* Bordó para los títulos principales */
+, h2 {
+  color: #ffffff; /* Bordó para los títulos principales */
 }
 
 h1 {
@@ -623,7 +635,7 @@ h2 {
   font-size: 2.2em;
   margin-top: 40px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #8f142b;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
   font-weight: 500;
   text-align: center;
@@ -632,8 +644,8 @@ h2 {
 h3 {
   font-family: boston angel;
   font-size: 1.8em;
-  color: #8f142b; /* Letras blancas para los subtítulos */
-  margin-top: 30px;
+  color: #ffffff; /* Letras blancas para los subtítulos */
+  margin-top: 20px;
   font-weight: 500;
 }
 
@@ -654,12 +666,12 @@ section {
 
 /* Estilo para los textos destacados */
 .highlighted {
-  color: #8f142b
+  color: #000000
   font-weight: 700;
 }
 
 a {
-  color: #8f142b; /* Bordó para enlaces */
+  color: #ffffff; /* Bordó para enlaces */
   text-decoration: none;
   font-weight: 500;
 }
@@ -694,7 +706,7 @@ a:hover {
 .maridaje-item {
   flex: 1;
   min-width: 300px;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
@@ -746,7 +758,7 @@ a:hover {
 // Variables de colores
 $color-primary: #6f42c1; // Color principal
 $color-secondary: #f8f9fa; // Color de fondo secundario
-$color-accent: #28a745; // Botón de acción (ir a pagar)
+$color-accent: #28a745; // 
 
 // Estilos generales
 body {
@@ -848,3 +860,15 @@ td input[type="number"] {
 // Animación slider
 const sliderContent = document.querySelector('.slider .content');
 let position = 0;
+
+@media (max-width: 768px) {
+  .whatsapp-link {
+      width: 50px; /* Tamaño más pequeño para móviles */
+      height: 50px;
+
+      img {
+          width: 25px;
+          height: 25px;
+      }
+  }
+}
