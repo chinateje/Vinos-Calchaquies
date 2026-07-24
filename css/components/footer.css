@@ -4,17 +4,21 @@ footer {
   padding: 20px;
   text-align: center;
   align-items: center;
-
 }
+
 footer p {
   margin: 0;
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
 }
+
 footer a {
   color: #f8c24e;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=footer.css.map */
+} 
+
+/*# sourceMappingURL=footer.css.map */

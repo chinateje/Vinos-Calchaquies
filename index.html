@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Vinos de los Valles</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinos Calchaquíes</title>
+    
+    <!-- SEO & Meta Etiquetas -->
     <meta name="description" content="Descubre vinos añejados de los Valles Calchaquíes, cosecha 2015. Reservas y grandes cortes premiados, tradición y calidad en cada botella. ¡Compra online!">
     <meta name="keywords" content="vinos añejados, Valles Calchaquíes, reserva 2015, grandes cortes, vinos premiados, tienda online de vinos, tradición, calidad en vinos">
 
@@ -27,10 +24,14 @@
     <meta name="twitter:image" content="https://vinos-calchaquies.vercel.app/imagen-de-vinos.jpg">
     <meta name="twitter:site" content="@vinos_calchaquies">
     <meta name="twitter:creator" content="@vinos_calchaquies">
-    <!-- Enlace a las fuentes personalizadas -->
+
+    <!-- Estilos & Fuentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <!-- Encabezado -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -45,96 +46,172 @@
                 </button>
                 <!-- Contenido del menú -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Links de navegación -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/maridajes.html">MARIDAJES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">INICIO</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/maridajes.html">MARIDAJES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/productos.html">PRODUCTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html">INICIO</a></li>
                     </ul>
                     <!-- Formulario de búsqueda -->
                     <form class="d-flex me-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-                    
-                    
-                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="head">
-        <img src="../imagenes/logo-vinos-calchaquies.png" id="logo" alt="Logo de Vinos Calchaquíes">
+    <div class="head text-center my-3">
+        <img src="./imagenes/logo-vinos-calchaquies.png" id="logo" alt="Logo de Vinos Calchaquíes" style="max-width: 200px;">
+    </div>
 
     <!-- Sección Principal -->
-    <section id="home">
-        <div class="intro-text text-center">
+    <section id="home" class="container">
+        <div class="intro-text text-center my-4">
             <h2>Bienvenido a la Tienda de Vinos de los Valles Calchaquíes</h2>
             <p>Descubre nuestra exclusiva selección de vinos reserva de los Valles.</p>
         </div>
+
         <a href="https://wa.me/541130817701" target="_blank" class="whatsapp-link" aria-label="Contactar por WhatsApp">
             <img src="imagenes/whatsapp.png" alt="WhatsApp">
         </a>
-        
-<!-- Botón del carrito -->
-<a href="https://wa.me/541130817701" class="d-flex align-items-center">
-    <img src="./imagenes/shopping-cart.png" alt="Carrito" style="width: 50px; height: auto;">
-    <div class="filtros">
-        <button>General</button>
-        <button>Stones</button>
-        <button>Malbec</button>
-        <button>Blend</button>
-        <button>Cabernet</button>
-    </div>
-        <!-- Galería de Productos -->
-        <div class="productos-galeria">
-            <h3 class="display-1 text-center mb-4">DESTACADOS</h3>
-            <div class="galeria d-flex justify-content-between">
-                <div class="vino slide-top">
-                    <img src="imagenes/9.png" alt="Don Aldo Reserva">
-                    <div class="d-flex justify-content-between">
-                        <h4>Blend Stones 2016 - Homenaje 62 años</h4>
-                        <p>$20,000</p>
+
+        <!-- VALIDACIÓN DE INGRESO POR EMAIL -->
+        <div id="pantalla-ingreso" class="row justify-content-center my-5">
+            <div class="col-md-6">
+                <div class="card shadow p-4 text-center">
+                    <h3 class="mb-3" style="color: #58111A;">Comenzar Validación</h3>
+                    <p class="text-muted">Ingresá tu correo electrónico para simular tu compra:</p>
+                    
+                    <form id="form-login">
+                        <div class="mb-3 text-start">
+                            <label for="email-usuario" class="form-label font-weight-bold">Correo Electrónico:</label>
+                            <input type="email" id="email-usuario" class="form-control" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div id="error-msg" class="alert alert-danger d-none py-2" role="alert">
+                            Por favor, ingresá un correo válido.
+                        </div>
+                        <button type="submit" class="btn text-white w-100 font-weight-bold" style="background-color: #58111A;">Ingresar a la Tienda</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIMULADOR Y CARRITO (Oculto hasta ingresar mail) -->
+        <div id="pantalla-tienda" class="d-none my-4">
+            <div class="alert alert-light border d-flex justify-content-between align-items-center mb-4">
+                <span>Cliente: <strong id="user-email-display" class="text-primary"></strong></span>
+                <span class="badge bg-secondary">Simulador Activo</span>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <img src="./imagenes/shopping-cart.png" alt="Carrito" style="width: 50px; height: auto;" class="me-3">
+                <div class="filtros d-flex gap-2 flex-wrap">
+                    <button class="btn btn-outline-dark btn-sm">General</button>
+                    <button class="btn btn-outline-dark btn-sm">Stones</button>
+                    <button class="btn btn-outline-dark btn-sm">Malbec</button>
+                    <button class="btn btn-outline-dark btn-sm">Blend</button>
+                    <button class="btn btn-outline-dark btn-sm">Cabernet</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Lista interactiva de productos -->
+                <div class="col-lg-7">
+                    <h3 class="mb-3 text-center text-lg-start" style="color: #58111A;">Seleccioná tus vinos</h3>
+                    <div id="lista-productos" class="d-flex flex-column gap-3">
+                        <!-- Vinos generados por JS -->
                     </div>
-                    <p>Gran Corte 2015</p>
                 </div>
 
-                <div class="vino slide-top">
-                    <img src="imagenes/2.png" alt="Rolling62 Stones Malbec">
-                    <div class="d-flex justify-content-between">
-                        <h4>Rolling Stones Malbec 2015</h4>
-                        <p>$10,000</p>
+                <!-- Resumen de Carrito y Finalizar Pago -->
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <div class="card shadow-sm p-3 bg-light">
+                        <h3 style="color: #58111A;" class="border-bottom pb-2">Tu Carrito</h3>
+                        
+                        <div id="items-carrito" class="my-3">
+                            <p class="text-muted italic">El carrito está vacío</p>
+                        </div>
+
+                        <hr>
+
+                        <h4>Método de pago</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pago" id="pago-transf" value="transferencia" checked>
+                            <label class="form-check-label fw-bold" for="pago-transf">
+                                Transferencia (15% OFF)
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="pago" id="pago-tarjeta" value="tarjeta">
+                            <label class="form-check-label fw-bold" for="pago-tarjeta">
+                                Tarjeta
+                            </label>
+                        </div>
+
+                        <div class="p-3 bg-white rounded border mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Subtotal:</span>
+                                <span id="subtotal-val" class="fw-bold">$0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-1 text-success">
+                                <span>Descuento aplicado:</span>
+                                <span id="descuento-val" class="fw-bold">$0</span>
+                            </div>
+                            <hr class="my-2">
+                            <div class="d-flex justify-content-between h5 m-0" style="color: #58111A;">
+                                <span>Total actual:</span>
+                                <span id="total-val">$0</span>
+                            </div>
+                        </div>
+
+                        <!-- Botón de Finalizar Pago / Comprar -->
+                        <button id="btn-finalizar" class="btn text-white w-100 fw-bold py-2" style="background-color: #58111A;" disabled>
+                            FINALIZAR COMPRA
+                        </button>
                     </div>
-                    <p>Edición limitada de 2015</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería Destacados (Vista previa visual) -->
+        <div class="productos-galeria my-5">
+            <h3 class="display-6 text-center mb-4" style="color: #58111A;">DESTACADOS</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 vino slide-top text-center">
+                    <img src="imagenes/9.png" alt="Blend Stones 2016" class="img-fluid mb-2" style="max-height: 250px;">
+                    <div class="d-flex justify-content-between px-3">
+                        <h5 class="fontSize-sm">Blend Stones 2016</h5>
+                        <p class="fw-bold">$20.000</p>
+                    </div>
+                    <p class="text-muted">Gran Corte 2015</p>
                 </div>
 
-                <div class="vino slide-top">
-                    <img src="./imagenes/julio-julian-002.jpg" alt="Julio Julian Reserva">
-                    <div class="d-flex justify-content-between">
-                        <h4>Julio Julian Reserva</h4>
-                        <p>$18,500</p>
+                <div class="col-md-4 vino slide-top text-center">
+                    <img src="imagenes/2.png" alt="Rolling Stones Malbec" class="img-fluid mb-2" style="max-height: 250px;">
+                    <div class="d-flex justify-content-between px-3">
+                        <h5>Rolling Stones Malbec 2015</h5>
+                        <p class="fw-bold">$10.000</p>
                     </div>
-                    <p>Gran Vino de 2015</p>
+                    <p class="text-muted">Edición limitada de 2015</p>
+                </div>
+
+                <div class="col-md-4 vino slide-top text-center">
+                    <img src="./imagenes/julio-julian-002.jpg" alt="Julio Julian Reserva" class="img-fluid mb-2" style="max-height: 250px;">
+                    <div class="d-flex justify-content-between px-3">
+                        <h5>Julio Julian Reserva</h5>
+                        <p class="fw-bold">$18.500</p>
+                    </div>
+                    <p class="text-muted">Gran Vino de 2015</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Sobre Nosotros -->
-    <section id="about">
+    <section id="about" class="container my-5 p-4 bg-white rounded shadow-sm">
         <h2>Sobre Nosotros</h2>
         <p>Somos amantes del vino reserva, y nos especializamos en vinos de los Valles Calchaquíes, conocidos por su
             altitud, clima único y uvas de gran calidad. Ofrecemos solo lo mejor de la región, con una cuidadosa
@@ -146,7 +223,8 @@
         <p>&copy; 2024 Vinos de los Valles. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Scripts JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

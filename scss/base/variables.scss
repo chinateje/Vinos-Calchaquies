@@ -23,7 +23,8 @@ header {
 
 header h1 {
   font-size: 3em;
-  color: $primary-color;#f4f4f9
+  color: $primary-color; // #f4f4f9
+
 }
 
 /* Productos */
@@ -45,7 +46,7 @@ header h1 {
 }
 
 // Tipografías
-$font-primary: 'DM Sans', sans-serif;
+$font-primary: 'Boston Angel', sans-serif;
 $font-secondary: 'Boston Angel',
 /* Variables SCSS */
 $primary-color: #8f142b;
