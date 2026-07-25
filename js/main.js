@@ -135,4 +135,44 @@ document.addEventListener('DOMContentLoaded', () => {
         itemsCarrito.appendChild(div);
       });
 
-      if (btnFinalizar) btnF
+      if (btnFinalizar) btnFinalizar.disabled = false;
+
+      document.querySelectorAll('.btn-eliminar').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = parseInt(e.target.getAttribute('data-id'));
+          carrito = carrito.filter(item => item.id !== id);
+          actualizarCarrito();
+        });
+      });
+    }
+
+    const subtotal = carrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
+    let descuento = 0;
+
+    if (metodoPago === 'transferencia') {
+      descuento = subtotal * 0.15;
+    }
+
+    const total = subtotal - descuento;
+
+    if (subtotalVal) subtotalVal.textContent = formatearPrecio(subtotal);
+    if (descuentoVal) descuentoVal.textContent = formatearPrecio(descuento);
+    if (totalVal) totalVal.textContent = formatearPrecio(total);
+  }
+
+  // 6. Evento de Finalizar Compra
+  if (btnFinalizar) {
+    btnFinalizar.addEventListener('click', () => {
+      const subtotal = carrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
+      const descuento = metodoPago === 'transferencia' ? subtotal * 0.15 : 0;
+      const total = subtotal - descuento;
+
+      alert(`¡Gracias por tu compra en Vinos Calchaquíes!\n\nEnviamos el detalle de pago al correo: ${emailUsuario}\nTotal a pagar: ${formatearPrecio(total)} (${metodoPago === 'transferencia' ? 'Con 15% OFF aplicado' : 'Tarjeta'})`);
+
+      // Resetear carrito tras comprar
+      carrito = [];
+      actualizarCarrito();
+    });
+  }
+
+});

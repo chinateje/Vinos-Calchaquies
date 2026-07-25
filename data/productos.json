@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Blend Stones 2016",
+    "precio": 12000,
+    "imagen": "img/blend.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Rolling Stones Malbec 2015",
+    "precio": 15000,
+    "imagen": "img/malbec.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Julio Julian Reserva",
+    "precio": 9500,
+    "imagen": "img/reserva.jpg"
+  }
+]
